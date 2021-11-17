@@ -1,0 +1,73 @@
+// DEKLARASI
+    
+    int choice, type, market, itemPrice, qty, total, ppn;
+    char task, authData, verifyData, database , report;
+    char typeItem[50];
+    char itemMarket[50];
+    char itemName[50];
+    char nama[50];
+    char username[50] ;
+    char date[25] ;
+
+// ALGORITMA
+BEGIN
+
+    openapp();
+    nama <- input()
+    username <- input()
+    date <- input()
+    task <- write()
+    task <- read()
+
+    DO {
+
+
+    IF (task == 'Y' || task == 'y' ) THEN
+
+        printf("Pilih tipe barang survey : ");
+        printf("1. Sayuran  ");
+        printf("2. Daging ");
+        printf("3. Sembako  ");
+        type <- input()
+
+        printf("Pilih pasar barang survey : ");
+        printf("1. Gambir  ");
+        printf("2. Gedebage ");
+        printf("3. Cimahi  ");
+        market <- input()
+
+        itemName <- input()
+        itemPrice <- input()
+        qty <- input()
+
+        total = qty * itemPrice;
+        ppn = total * 100 / 10;
+
+        printf("Apakah data sudah benar?");
+        authData <- input()
+        printf("Verifikasi data survey");
+        verifyData <- input()
+
+    } WHILE (authData == 'n' || verifyData == 'n') ENDWHILE
+
+    printf(\n====================================LAPORAN HASIL SURVEY PANGAN====================================\n\n");
+            printf("Nama Lengkap        : ", nama);
+            printf("Tanggal Survey      : ", date);
+            printf("Pasar Survey        : ", itemMarket);
+            printf("Tipe Barang         : ", typeItem);
+            printf("Nama Barang         : ", itemName);
+            printf("Harga Barang        : ", itemPrice);
+            printf("Kuantiti Barang     : ", qty);
+            printf("PPN Barang          : ", qty);
+            printf("Created by ..... @", username);
+
+
+    ENDIF
+
+
+END
+        
+
+
+
+

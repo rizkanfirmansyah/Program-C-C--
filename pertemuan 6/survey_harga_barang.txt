@@ -1,0 +1,112 @@
+Survey_harga_pangan
+
+Deklarasi
+
+char type ; -> menampung type barang yang mau dipilih
+char name ; -> menampung nama barang yang mau dicari harga nya
+int price ; -> harga barang
+int total ; -> harga total barang
+char unit ; -> satuan barang
+
+Algoritma
+
+print('Masukkan type barang')
+type <- 'elektronik'
+if(type == 'elektronik')
+    print('laptop')
+    print('tab')
+    print('handphone')
+
+    print('Pilih elektronik')
+    name <- 'laptop'
+
+    if(name == 'laptop')
+        price <- 5000000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+    else if(name == 'tab')  
+        price <- 2000000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+    else if(name == 'handphone')
+        price <- 1500000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+        
+
+else if(type == 'makanan')
+    print('coklat')
+    print('sayuran')
+    print('cemilan')
+
+    print('Pilih makanan')
+    name <- 'sayuran'
+
+    if(name == 'sayuran')
+        price <- 5000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+    else if(name == 'coklat')
+        price <- 15000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+    else if(name == 'cemilan')
+        price <- 20000
+        print('pcs')
+        print('lusin')
+        print('Pilih satuan')
+        unit <- 'pcs'
+        
+        if(unit == 'pcs')
+            total = price * 1
+        else
+            total = price * 12
+
+
+
+    print('Nama Barang : ', name)
+    print('Tipe Barang : ', type)
+    print('Harga Barang : ', price)
+    print('Total Harga : ', total)
+
+
