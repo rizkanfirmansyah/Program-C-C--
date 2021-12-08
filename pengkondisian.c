@@ -92,4 +92,59 @@ int main()
         printf("Tunggu petugas datang");
     }
     printf("\n\n");
+
+    int jumlah_anak = 1;
+    printf("jumlah anak: %d\n", jumlah_anak);
+
+    switch (jumlah_anak)
+    {
+    case 0:
+        printf("sabar");
+        break;
+    case 1:
+        printf("Ok");
+        break;
+    case 2:
+        printf("Cukup");
+        break;
+    case 3:
+        printf("Cukup Banyak");
+        break;
+    case 4:
+        printf("Kebanyakan");
+        break;
+    case 5:
+        printf("Rajin");
+        break;
+    default:
+        printf("Rajin teuing");
+        break;
+    }
+    printf("\n\n");
+
+    char ops = '+';
+    printf("operatornya : %c\n", ops);
+
+    switch (ops)
+    {
+    case '+':
+        printf("tambah");
+        break;
+    case '-':
+        printf("kurang");
+        break;
+    case '*':
+        printf("kali");
+        break;
+    case '/':
+        printf("bagi");
+        break;
+    case '%':
+        printf("mod");
+        break;
+    default:
+        printf("tidak diketahui");
+        break;
+    }
+    printf("\n\n");
 }
