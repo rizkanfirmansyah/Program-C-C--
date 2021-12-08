@@ -54,4 +54,37 @@ int main(){
     printf("%s \n", kata3);
     printf("\n\n");
 
+        //tipe data buatan
+    printf("============================= \n");
+    printf("Tipe Data Buatan \n");
+    printf("====================================\n");
+    struct nasabah
+    {
+        char *nama;
+        int umur;
+    };
+    struct nasabah nas[2];
+    nas[0].nama = 'A';
+    nas[0].umur = 12;
+    nas[1].nama = 'B';
+    nas[1].umur = 14;
+    printf("%c - %d\n", nas[0].nama, nas[0].umur);
+    printf("%c - %d\n", nas[1].nama, nas[1].umur);
+    printf("\n\n");
+
+    //mean, median, min, max
+    printf("============================= \n");
+    printf("Mean, Median, Min, Max \n");
+    printf("============================= \n\n");
+    unsigned char test [SIZE] = {};
+    for(int i=0; i<SIZE; i++) {
+        test[i] = rand() % 90;
+    }
+    for(int j=0; j<SIZE; j++) {
+        printf("%d \n", test[j]);
+    }
+    printf("============================= \n");
+    printf("\n\n");
+
+
 }
